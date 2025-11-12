@@ -1,0 +1,60 @@
+# Enterprise Roo Code Security Guard Rails
+# MINIMAL exclusions for enterprise AI agents - only actual secrets excluded
+# AI agents need full project access for effective analysis and validation
+
+# ACTUAL SECRETS AND CREDENTIALS ONLY
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+*.secret
+api-keys/
+tokens/
+private-keys/
+.aws/credentials
+.gcp/credentials
+.azure/credentials
+
+# Infrastructure Secrets (not configs)
+terraform.tfstate
+*.tfvars
+kubernetes-secrets/
+helm-secrets/
+docker-secrets/
+vault/
+
+# OS Noise Files Only
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Git Internal (not configs or logs)
+.git/objects/
+.git/refs/
+.gitconfig
+.git-credentials
+
+# Enterprise AI agents need full access to create and manage all business documents
+# including audit logs, compliance reports, strategic intelligence, and executive materials
+# Only actual secrets and credentials are restricted
+
+# NOTE: Enterprise AI agents need access to EVERYTHING else including:
+# - All build artifacts (dist/, build/, target/, *.exe, *.dll, etc.) - to verify builds
+# - All logs and monitoring data (logs/, *.log, monitoring/, metrics/) - for analysis
+# - All test data and coverage (test-data/, coverage/, .pytest_cache/) - for validation
+# - All databases and caches (*.db, *.sqlite, cache/) - for data analysis
+# - All configuration files - for security and compliance review
+# - All documentation and reports - for completeness verification
+# - All temporary and scratch files - for debugging and analysis
+# - All dependencies (node_modules/, vendor/) - for security scanning
+# - All media files - for content analysis if needed
+# - Public compliance and audit files - for regulatory validation
+
+# Custom Enterprise Exclusions (SECRETS ONLY)
+# Add organization-specific credential patterns below
